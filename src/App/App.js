@@ -1,6 +1,15 @@
 import './App.css';
+import { useState, useEffect } from 'react';
+import { getHomepage } from '../APICalls'
 
-function App() {
+const App = () => {
+  const [artifacts, setArtifacts] = useState([])
+
+  useEffect(() => {
+    getHomepage()
+    .then(data => setArtifacts(data))
+  })
+
   return (
     <div className="App">
       LET'S GOGH
