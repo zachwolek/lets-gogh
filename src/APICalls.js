@@ -1,18 +1,21 @@
-export const getHomepage = () => {
+export const getHomepage = async () => {
     return fetch(`https://api.artic.edu/api/v1/artworks/search?q=monet`)
+        //returns the search of 10 artifacts
+    .then(response => getArtifactIds(response))
+        //collects an array of IDs
+    .then(artifactIds => resolveFetchPromises(artifactIds))
+        //returns an array of promises if specific information
+    .catch(error => console.log(error))
+}
+
+export const searchArtifacts = async (searchValue) => {
+    return fetch(`https://api.artic.edu/api/v1/artworks/search?q=${searchValue}`)
     .then(response => getArtifactIds(response))
     .then(artifactIds => resolveFetchPromises(artifactIds))
     .catch(error => console.log(error))
 }
 
-export function searchArtifacts(searchValue){
-    console.log(searchValue)
-    return fetch(`https://api.artic.edu/api/v1/artworks/search?q=${searchValue}`)
-    .then(response => getArtifactIds(response))
-    .then(artifactIds => resolveFetchPromises(artifactIds))
-}
-
-function getArtifactIds(response){
+const getArtifactIds = async (response) => {
     if(!response.ok){
         throw new Error ('Something has gone wrong at a JSON level');
      } else {
@@ -24,7 +27,7 @@ function getArtifactIds(response){
      }
 }
 
-function resolveFetchPromises(artifactIds){
+const resolveFetchPromises = (artifactIds) => {
     const fetchPromises = artifactIds.map(id => 
     fetch(`https://api.artic.edu/api/v1/artworks/${id}?fields=id,title,image_id`)
         .then(response => {
