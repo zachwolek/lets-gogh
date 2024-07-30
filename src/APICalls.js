@@ -1,12 +1,12 @@
-export const getHomepage = async () => {
-    return fetch(`https://api.artic.edu/api/v1/artworks/search?q=monet`)
-        //returns the search of 10 artifacts
-    .then(response => getArtifactIds(response))
-        //collects an array of IDs
-    .then(artifactIds => resolveFetchPromises(artifactIds))
-        //returns an array of promises if specific information
-    .catch(error => console.log(error))
-}
+// export const getHomepage = async () => {
+//     return fetch(`https://api.artic.edu/api/v1/artworks/search?q=cats`)
+//         //returns the search of 10 artifacts
+//     .then(response => getArtifactIds(response))
+//         //collects an array of IDs
+//     .then(artifactIds => resolveFetchPromises(artifactIds))
+//         //returns an array of promises if specific information
+//     .catch(error => console.log(error))
+// }
 
 export const searchArtifacts = async (searchValue) => {
     return fetch(`https://api.artic.edu/api/v1/artworks/search?q=${searchValue}`)
