@@ -1,7 +1,7 @@
 import { Card } from '../Card/Card'
 import './Exhibitions.css'
 
-export const Exhibitions = ({exhibitions, updateArtFeature}) => {
+export const Exhibitions = ({exhibitions, updateArtFeature, saveExhibition}) => {
     const exhibitionCards = exhibitions.map(exhibition => {
         return (
             <Card 
@@ -12,6 +12,7 @@ export const Exhibitions = ({exhibitions, updateArtFeature}) => {
              artist_title={exhibition.artist_title}
              alt_text={exhibition.alt_text}
              updateArtFeature={updateArtFeature}
+             saveExhibition={saveExhibition}
             />
          )
     })

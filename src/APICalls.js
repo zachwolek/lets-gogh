@@ -1,7 +1,7 @@
 export const searchExhibitions = async (searchValue) => {
     return fetch(`https://api.artic.edu/api/v1/artworks/search?q=${searchValue}`)
     .then(response => getExhibitionIds(response))
-    .then(exhibitionIds => resolveFetchPromises(exhibitionIds))
+    .then(exhibitionIds => getExhibitionCards(exhibitionIds))
     .catch(error => console.log(error))
 }
 
@@ -17,7 +17,7 @@ const getExhibitionIds = async (response) => {
      }
 }
 
-const resolveFetchPromises = (exhibitionIds) => {
+export const getExhibitionCards = (exhibitionIds) => {
     const fetchPromises = exhibitionIds.map(id => 
     fetch(`https://api.artic.edu/api/v1/artworks/${id}?fields=id,title,image_id,artist_title,alt_text,short_description`)
         .then(response => {
