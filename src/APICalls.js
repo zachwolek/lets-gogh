@@ -29,7 +29,7 @@ const getArtifactIds = async (response) => {
 
 const resolveFetchPromises = (artifactIds) => {
     const fetchPromises = artifactIds.map(id => 
-    fetch(`https://api.artic.edu/api/v1/artworks/${id}?fields=id,title,image_id`)
+    fetch(`https://api.artic.edu/api/v1/artworks/${id}?fields=id,title,image_id,artist_title,alt_text`)
         .then(response => {
         if (!response.ok) {
             throw new Error(`Error fetching data for ID ${id}`);
@@ -39,6 +39,17 @@ const resolveFetchPromises = (artifactIds) => {
         .then(data => data.data)
     )
     return Promise.all(fetchPromises)
+}
+
+const getArtifactInfo = (id) => {
+    return fetch(`https://api.artic.edu/api/v1/artworks/${id}?fields=id,title,image_id,artist_title,description,short_description,place_of_origin,date_display,style_title`)
+    .then(response => {
+    if (!response.ok) {
+        throw new Error(`Error fetching data for ID ${id}`);
+    }
+    return response.json();
+    })
+    .then(data => data.data)
 }
 
 // const artifactIds = [

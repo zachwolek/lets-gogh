@@ -8,6 +8,8 @@ export const Artifacts = ({artifacts}) => {
              key={artifact.id}
              image_id={artifact.image_id}
              title={artifact.title}
+             artist_title={artifact.artist_title}
+             alt_text={artifact.alt_text}
             />
          )
     })
