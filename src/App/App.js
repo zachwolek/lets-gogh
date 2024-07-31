@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { getHomepage, searchExhibitions } from '../APICalls'
 import { Form } from '../Form/Form';
 import { Exhibitions } from '../Exhibitions/Exhibitions';
+import { ArtFeature } from '../ArtFeature/ArtFeature'
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
