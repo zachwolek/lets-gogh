@@ -1,17 +1,17 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import { getHomepage, searchArtifacts } from '../APICalls'
+import { getHomepage, searchExhibitions } from '../APICalls'
 import { Form } from '../Form/Form';
-import { Artifacts } from '../Artifacts/Artifacts';
+import { Exhibitions } from '../Exhibitions/Exhibitions';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
-  const [artifacts, setArtifacts] = useState([])
+  const [exhibitions, setExhibitions] = useState([])
   const [searchValue, setSearchValue] = useState('')
 
   useEffect(() => {
-    searchArtifacts(searchValue)
-    .then(data => setArtifacts(data))
+    searchExhibitions(searchValue)
+    .then(data => setExhibitions(data))
   })
 
   return (
@@ -21,10 +21,10 @@ const App = () => {
           <Route path='/' element={
               <>
                 <Form setSearchValue={setSearchValue}/>
-                <Artifacts artifacts={artifacts}/>
+                <Exhibitions exhibitions={exhibitions}/>
               </>
           }/>
-      </Routes>
+      </Routes> 
     </div>
   );
 }

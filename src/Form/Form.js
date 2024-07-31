@@ -22,7 +22,7 @@ export const Form = ({setSearchValue}) => {
 
     return (
         <form>
-            <label htmlFor="search">Search Artifacts</label>
+            <label htmlFor="search">Search Exhibitions</label>
             <input
                 className='input' 
                 type="text" 

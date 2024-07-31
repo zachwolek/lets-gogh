@@ -1,4 +1,6 @@
-.artifact-card {
-    border: 1px black;
+.exhibition-card {
+    border: 3px solid black; 
     width: 250px;
+    padding: 10px;
+    margin: 10px;
 }
