@@ -24,6 +24,9 @@ const App = () => {
                 <Exhibitions exhibitions={exhibitions}/>
               </>
           }/>
+          <Route path='/artfeature/:id' element={
+            <ArtFeature />
+          }/>
       </Routes> 
     </div>
   );
