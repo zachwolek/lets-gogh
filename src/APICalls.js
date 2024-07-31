@@ -19,7 +19,7 @@ const getExhibitionIds = async (response) => {
 
 const resolveFetchPromises = (exhibitionIds) => {
     const fetchPromises = exhibitionIds.map(id => 
-    fetch(`https://api.artic.edu/api/v1/artworks/${id}?fields=id,title,image_id,artist_title,alt_text`)
+    fetch(`https://api.artic.edu/api/v1/artworks/${id}?fields=id,title,image_id,artist_title,alt_text,short_description`)
         .then(response => {
         if (!response.ok) {
             throw new Error(`Error fetching data for ID ${id}`);
@@ -31,7 +31,7 @@ const resolveFetchPromises = (exhibitionIds) => {
     return Promise.all(fetchPromises)
 }
 
-const getExhibitionInfo = (id) => {
+export const getExhibitionInfo = async (id) => {
     return fetch(`https://api.artic.edu/api/v1/artworks/${id}?fields=id,title,image_id,artist_title,description,short_description,place_of_origin,date_display,style_title`)
     .then(response => {
     if (!response.ok) {
@@ -39,7 +39,6 @@ const getExhibitionInfo = (id) => {
     }
     return response.json();
     })
-    .then(data => data.data)
 }
 
 // const exhibitionIds = [
