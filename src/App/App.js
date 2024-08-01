@@ -64,7 +64,11 @@ const App = () => {
             }
           />
           <Route path='/artfeature/:id' element={
-            <ArtFeature artFeature={artFeature}/>
+            <ArtFeature 
+            artFeature={artFeature}
+            savedExhibitionIds={savedExhibitionIds}
+            toggleSaveExhibition={toggleSaveExhibition}
+            />
           }/>
           <Route 
             path='/saved' element={

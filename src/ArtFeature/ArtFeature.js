@@ -1,7 +1,7 @@
 import './ArtFeature.css'
 import { Link } from 'react-router-dom'
 
-export const ArtFeature = ({artFeature}) => {
+export const ArtFeature = ({artFeature, savedExhibitionIds, toggleSaveExhibition}) => {
     const {artist_title, date_display, description, id, image_id, place_of_origin, short_description, style_title, title} = artFeature
 
     console.log("DESCRIPTION: ", artFeature)
@@ -16,10 +16,15 @@ export const ArtFeature = ({artFeature}) => {
             <p dangerouslySetInnerHTML={{ __html: short_description }} />
             <p>style_title: {style_title}</p>
             <p>title: {title}</p>
-            <button>SAVE</button>
             <Link to={`/`}>
                 <button>BACK</button>
             </Link>  
+            <button 
+                className={`save-button ${savedExhibitionIds.includes(id) ? 'remove-state' : 'save-state'}`}
+                onClick={() => toggleSaveExhibition(id)}
+                >
+                {savedExhibitionIds.includes(id) ? 'REMOVE' : 'SAVE'}
+            </button>
         </>
     )
 }

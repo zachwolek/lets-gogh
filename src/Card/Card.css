@@ -4,3 +4,13 @@
     padding: 10px;
     margin: 10px;
 }
+
+.save-button{
+    margin: 3px
+}
+
+.save-button.remove-state {
+    background-color: purple;
+    color: white;
+}
+

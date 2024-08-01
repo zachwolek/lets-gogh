@@ -14,7 +14,6 @@ export const SavedExhibitions = ({savedExhibitions, updateArtFeature, toggleSave
              artist_title={exhibition.artist_title}
              alt_text={exhibition.alt_text}
              updateArtFeature={updateArtFeature}
-
              toggleSaveExhibition={toggleSaveExhibition}
              savedExhibitionIds={savedExhibitionIds}
             />
@@ -23,12 +22,15 @@ export const SavedExhibitions = ({savedExhibitions, updateArtFeature, toggleSave
 
     return (
         <>
-        <header>SAVED</header>
+        <h1>Your Curated Bucket List</h1>
         <Link to={`/`}>
-                <button>BACK</button>
+                <button>Back to Search</button>
         </Link>
         <div className='saved-exhibitions-container'>
-            {savedExhibitionCards}
+            {savedExhibitionCards.length === 0 ?
+            <p>Nothing saved yet! <Link to={`/`}>Try Searching Exhibits!</Link>
+            </p>
+            : savedExhibitionCards}
         </div>
         </>
     )

@@ -21,10 +21,10 @@ export const Card = ({id, image_id, title, artist_title, alt_text, updateArtFeat
                 </Link>    
 
                 <button 
-                className='save-exhibition'
+                className={`save-button ${savedExhibitionIds.includes(id) ? 'remove-state' : 'save-state'}`}
                 onClick={() => toggleSaveExhibition(id)}
                 >
-                    {savedExhibitionIds.includes(id) ? 'REMOVE' : 'SAVE'}
+                {savedExhibitionIds.includes(id) ? 'REMOVE' : 'SAVE'}
                 </button>
             </div>
         )
