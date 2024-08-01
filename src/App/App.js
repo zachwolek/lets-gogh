@@ -21,6 +21,11 @@ const App = () => {
     .then(data => setExhibitions(data))
   }, [searchValue])
 
+  useEffect(() => {
+    getExhibitionCards(savedExhibitionIds)
+      .then(data => setSavedExhibitions(data))
+  }, [savedExhibitionIds])
+
   const updateArtFeature = (id) => {
     getExhibitionInfo(id)
     .then(data => {
@@ -30,17 +35,13 @@ const App = () => {
     .catch(error => console.log(error))
   }
 
-  const saveExhibition = (id) => {
-    if (!savedExhibitionIds.includes(id)){
-      setSavedExhibitionIds([...savedExhibitionIds, id])
+  const toggleSaveExhibition = (id) => {
+    if (savedExhibitionIds.includes(id)) { 
+      setSavedExhibitionIds(savedExhibitionIds.filter(exhibitionId => exhibitionId !== id));
+    } else {
+      setSavedExhibitionIds([...savedExhibitionIds, id]);
     }
-    console.log("SAVED IDS: ", savedExhibitionIds)
-  }
-
-  useEffect(() => {
-    getExhibitionCards(savedExhibitionIds)
-      .then(data => setSavedExhibitions(data))
-  }, [])
+  };
 
 
   return (
@@ -54,7 +55,10 @@ const App = () => {
                   setSearchValue={setSearchValue}
                 />
                 <Exhibitions 
-                  exhibitions={exhibitions} updateArtFeature={updateArtFeature} saveExhibition={saveExhibition}
+                  exhibitions={exhibitions} 
+                  updateArtFeature={updateArtFeature} 
+                  toggleSaveExhibition={toggleSaveExhibition}
+                  savedExhibitionIds={savedExhibitionIds}
                 />
               </>
             }
@@ -67,7 +71,9 @@ const App = () => {
             <SavedExhibitions 
               savedExhibitions={savedExhibitions} 
               updateArtFeature={updateArtFeature}
-              saveExhibition={saveExhibition}/>}
+              toggleSaveExhibition={toggleSaveExhibition} 
+              savedExhibitionIds={savedExhibitionIds} 
+            />}
           />
       </Routes> 
     </div>

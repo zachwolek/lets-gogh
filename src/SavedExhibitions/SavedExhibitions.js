@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { Card } from "../Card/Card"
 import './SavedExhibitions.css'
 
-export const SavedExhibitions = ({savedExhibitions, updateArtFeature, saveExhibition}) => {
+export const SavedExhibitions = ({savedExhibitions, updateArtFeature, toggleSaveExhibition, savedExhibitionIds}) => {
 
     const savedExhibitionCards = savedExhibitions.map(exhibition => {
         return (
@@ -14,7 +14,9 @@ export const SavedExhibitions = ({savedExhibitions, updateArtFeature, saveExhibi
              artist_title={exhibition.artist_title}
              alt_text={exhibition.alt_text}
              updateArtFeature={updateArtFeature}
-             saveExhibition={saveExhibition}
+
+             toggleSaveExhibition={toggleSaveExhibition}
+             savedExhibitionIds={savedExhibitionIds}
             />
          )
     })

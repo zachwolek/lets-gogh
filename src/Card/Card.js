@@ -1,7 +1,7 @@
 import './Card.css'
 import { Link } from 'react-router-dom'
 
-export const Card = ({id, image_id, title, artist_title, alt_text, updateArtFeature, saveExhibition}) => {
+export const Card = ({id, image_id, title, artist_title, alt_text, updateArtFeature, toggleSaveExhibition, savedExhibitionIds}) => {
 
         return (
             <div className="exhibition-card">
@@ -21,11 +21,11 @@ export const Card = ({id, image_id, title, artist_title, alt_text, updateArtFeat
                 </Link>    
 
                 <button 
-                    className='save-exhibition'
-                    onClick={()=> {
-                        saveExhibition(id)
-                    }}
-                >SAVE</button>
+                className='save-exhibition'
+                onClick={() => toggleSaveExhibition(id)}
+                >
+                    {savedExhibitionIds.includes(id) ? 'REMOVE' : 'SAVE'}
+                </button>
             </div>
         )
 }
