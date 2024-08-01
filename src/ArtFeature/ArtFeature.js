@@ -1,5 +1,6 @@
 import './ArtFeature.css'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types';
 
 export const ArtFeature = ({artFeature, savedExhibitionIds, toggleSaveExhibition}) => {
     const {artist_title, date_display, description, id, image_id, place_of_origin, short_description, style_title, title} = artFeature

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types';
 
 export const Form = ({setSearchValue}) => {
     const [inputValue, setInputValue] = useState('')
@@ -37,3 +38,7 @@ export const Form = ({setSearchValue}) => {
         </form>
     )
 }
+
+Form.propTypes = {
+    setSearchValue: PropTypes.func.isRequired,
+};

@@ -1,7 +1,8 @@
 import { Card } from '../Card/Card'
 import './Exhibitions.css'
+import PropTypes from 'prop-types';
 
-export const Exhibitions = ({exhibitions, updateArtFeature, toggleSaveExhibition, savedExhibitionIds}) => {
+export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, toggleSaveExhibition}) => {
     const exhibitionCards = exhibitions.map(exhibition => {
         return (
             <Card 
@@ -26,9 +27,10 @@ export const Exhibitions = ({exhibitions, updateArtFeature, toggleSaveExhibition
         </div>
     )
 }
-//loading goes here on 23.5
-//loading.current == true
-//after setExhibitions
-    //loading.current=== false
-//if loading <p>
-    //if false {exhibitioncards}
+
+Exhibitions.propTypes = {
+    exhibitions: PropTypes.array.isRequired,
+    savedExhibitionIds: PropTypes.array.isRequired,
+    updateArtFeature: PropTypes.func.isRequired,
+    toggleSaveExhibition: PropTypes.func.isRequired
+}

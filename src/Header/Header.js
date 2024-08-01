@@ -1,5 +1,6 @@
 import { Form } from '../Form/Form'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types';
 
 export const Header = ({setSearchValue}) => {
     return (
@@ -11,3 +12,7 @@ export const Header = ({setSearchValue}) => {
      </header>
     )
 }
+
+Header.propTypes = {
+    setSearchValue: PropTypes.func.isRequired,
+};

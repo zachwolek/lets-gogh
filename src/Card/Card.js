@@ -1,5 +1,6 @@
-import './Card.css'
-import { Link } from 'react-router-dom'
+import './Card.css';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export const Card = ({id, image_id, title, artist_title, alt_text, short_description, updateArtFeature, toggleSaveExhibition, savedExhibitionIds}) => {
 
@@ -33,4 +34,16 @@ export const Card = ({id, image_id, title, artist_title, alt_text, short_descrip
             </div>
         </div>
         )
+}
+
+Card.propTypes = {
+    id: PropTypes.number.isRequired,
+    image_id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    artist_title: PropTypes.string.isRequired,
+    alt_text: PropTypes.string.isRequired,
+    short_description: PropTypes.string,
+    updateArtFeature: PropTypes.func.isRequired,
+    toggleSaveExhibition: PropTypes.func.isRequired,
+    savedExhibitionIds: PropTypes.array.isRequired
 }

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { Card } from "../Card/Card"
+import PropTypes from 'prop-types';
 import './SavedExhibitions.css'
 
 export const SavedExhibitions = ({savedExhibitions, updateArtFeature, toggleSaveExhibition, savedExhibitionIds}) => {
@@ -35,3 +36,10 @@ export const SavedExhibitions = ({savedExhibitions, updateArtFeature, toggleSave
         </>
     )
 }
+
+SavedExhibitions.propTypes = {
+    savedExhibitions: PropTypes.array.isRequired,
+    updateArtFeature: PropTypes.func.isRequired,
+    toggleSaveExhibition: PropTypes.func.isRequired,
+    savedExhibitionIds: PropTypes.array.isRequired,
+};
