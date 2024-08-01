@@ -1,6 +1,6 @@
 .saved-exhibitions-container {
-    display: grid;
-    grid-template-columns: repeat(3, 320px); 
+    display: flex;
+    flex-wrap: wrap; 
     gap: 20px; 
     justify-content: center; 
     padding: 20px;

@@ -11,8 +11,3 @@ export const Header = ({setSearchValue}) => {
      </header>
     )
 }
-
-//click on saved
-//run function of loading all Cards based on IDs
-
-//What is the name of the function that runs IDs? 

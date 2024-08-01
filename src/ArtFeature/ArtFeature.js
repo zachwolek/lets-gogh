@@ -17,7 +17,7 @@ export const ArtFeature = ({artFeature, savedExhibitionIds, toggleSaveExhibition
             <p>style_title: {style_title}</p>
             <p>title: {title}</p>
             <Link to={`/`}>
-                <button>BACK</button>
+                <button>HOME</button>
             </Link>  
             <button 
                 className={`save-button ${savedExhibitionIds.includes(id) ? 'remove-state' : 'save-state'}`}

@@ -11,6 +11,7 @@ export const Exhibitions = ({exhibitions, updateArtFeature, toggleSaveExhibition
              title={exhibition.title}
              artist_title={exhibition.artist_title}
              alt_text={exhibition.alt_text}
+             short_description={exhibition.short_description}
              updateArtFeature={updateArtFeature}
              toggleSaveExhibition={toggleSaveExhibition}
              savedExhibitionIds={savedExhibitionIds}
