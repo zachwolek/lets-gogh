@@ -40,18 +40,3 @@ export const getExhibitionInfo = async (id) => {
     return response.json();
     })
 }
-
-// const exhibitionIds = [
-//     147721,
-//     265943,
-//     47608,
-//     153798,
-//     81558,
-//     52668,
-//     4705,
-//     4706,
-//     267736,
-//     268228,
-//     267846,
-//     147067
-// ]

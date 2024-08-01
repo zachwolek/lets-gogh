@@ -22,7 +22,13 @@ export const Exhibitions = ({exhibitions, updateArtFeature, toggleSaveExhibition
 
     return (
         <div className='exhibitions-container'>
-            {exhibitionCards}
+            {exhibitionCards ? exhibitionCards : <p>Loading</p> }
         </div>
     )
 }
+//loading goes here on 23.5
+//loading.current == true
+//after setExhibitions
+    //loading.current=== false
+//if loading <p>
+    //if false {exhibitioncards}
