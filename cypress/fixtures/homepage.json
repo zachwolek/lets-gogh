@@ -1,0 +1,86 @@
+{
+    "preference": null,
+    "pagination": {
+        "total": 126056,
+        "limit": 10,
+        "offset": 0,
+        "total_pages": 12606,
+        "current_page": 1
+    },
+    "data": [
+        {
+            "_score": 20690.133,
+            "thumbnail": {
+                "alt_text": "Abstract painting composed of small vertical dabs of multiple shades of blue with a small area of similar strokes of red, orange, and yellow in the upper right.",
+                "width": 5376,
+                "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAABw/Zhg/aBRBaBZBahRCaxxBahxEahNIchZJcR9LdB9OdiZIZSBEbShLbjxRZyBPeipRcSpReUpWaitXgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURoMJIDhJAywAcAlEkxhNNTQgAOw==",
+                "height": 6112
+            },
+            "api_model": "artworks",
+            "is_boosted": true,
+            "api_link": "https://api.artic.edu/api/v1/artworks/129884",
+            "id": 129884,
+            "title": "Starry Night and the Astronauts",
+            "timestamp": "2024-07-31T23:20:06-05:00"
+        },
+        {
+            "_score": 10345.066,
+            "thumbnail": {
+                "alt_text": "Painting of bedroom, blue walls, green window, tan bed, red bedding.",
+                "width": 14407,
+                "lqip": "data:image/gif;base64,R0lGODlhBgAFAPQAAHhwV3N+bnh/aXR8dJtsG6VsAJx4IIp8PIx0QYZ2SoZ/bIx+b3CGboiAQoKAVoWAVpiLYZqNYIiAcoeIc5SNdJeJfJiKfXyCgneAkXmLp3eFqomMgIWJmZOerAAAAAAAACH5BAAAAAAALAAAAAAGAAUAAAUYoMYEXJdhgwBF1wM4RIE01HYYiVJZk7SEADs=",
+                "height": 11406
+            },
+            "api_model": "artworks",
+            "is_boosted": true,
+            "api_link": "https://api.artic.edu/api/v1/artworks/28560",
+            "id": 28560,
+            "title": "The Bedroom",
+            "timestamp": "2024-08-01T03:00:18-05:00"
+        },
+        {
+            "_score": 6896.711,
+            "thumbnail": {
+                "alt_text": "Dark stone sculpture of Buddha sitting cross-legged, hands in lap, eyes closed.",
+                "width": 5085,
+                "lqip": "data:image/gif;base64,R0lGODlhBAAFAPQAAFdNQ1xSR1BQUVhXVVpYVllaWllaW25jWWljXXFnXWNiYWVjYWxmYGhoaIN6coR8dIiEgYmFggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAEAAUAAAURoEAMQoEwRnMkjQIEC/Q4UQgAOw==",
+                "height": 6356
+            },
+            "api_model": "artworks",
+            "is_boosted": true,
+            "api_link": "https://api.artic.edu/api/v1/artworks/21023",
+            "id": 21023,
+            "title": "Buddha Shakyamuni Seated in Meditation (Dhyanamudra)",
+            "timestamp": "2024-07-31T23:27:36-05:00"
+        },
+        {
+            "_score": 5172.533,
+            "thumbnail": {
+                "alt_text": "Painting of three black youths gardening, residential towers loom in the background.",
+                "width": 10256,
+                "lqip": "data:image/gif;base64,R0lGODlhBgAFAPQAAFJEOV9cVXRJQmBVUnNiQ2ltVmJiWWlrXGd6Zm9zanBzbnpwbHZ7cJF/YY6MfZV/gJaMjJGbiZWYj56Wl5KglZuUoKObo62go6yto7emqb+0ucW+s8q/tODo3QAAAAAAACH5BAAAAAAALAAAAAAGAAUAAAUYYGVpE5cJVycRjbFgDEJFx1AAwaMkG+SEADs=",
+                "height": 8754
+            },
+            "api_model": "artworks",
+            "is_boosted": true,
+            "api_link": "https://api.artic.edu/api/v1/artworks/137125",
+            "id": 137125,
+            "title": "Many Mansions",
+            "timestamp": "2024-07-30T17:46:27-05:00"
+        }
+    ],
+    "info": {
+        "license_text": "The `description` field in this response is licensed under a Creative Commons Attribution 4.0 Generic License (CC-By) and the Terms and Conditions of artic.edu. All other data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu.",
+        "license_links": [
+            "https://creativecommons.org/publicdomain/zero/1.0/",
+            "https://www.artic.edu/terms"
+        ],
+        "version": "1.10"
+    },
+    "config": {
+        "iiif_url": "https://www.artic.edu/iiif/2",
+        "website_url": "http://www.artic.edu"
+    }
+}
+
+
