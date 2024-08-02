@@ -1,0 +1,25 @@
+{
+    "data": {
+        "id": 137125,
+        "title": "Many Mansions",
+        "date_display": "1994",
+        "place_of_origin": "United States",
+        "description": "<p><em>Many Mansions</em> is the first in Kerry James Marshall’s series of five large-scale paintings depicting public housing projects in Chicago and Los Angeles such as Rockwell Gardens, Wentworth Gardens, or, as in <em>Many Mansions</em>, Stateway Gardens. Struck by the absurdity of the term “garden” to describe these failed solutions to low-income housing, Marshall was inspired to represent the profound contradictions of living in such an environment. <em>Many Mansions</em> is filled with ironic and startling juxtapositions of the real and artificial—from the unnaturally cheerful landscape to the three haunting, ebony-skinned figures dressed in nostalgic Sunday best. The title of the painting, visible on the red ribbon above, is a variation on Christ’s oft-quoted remark found in John [14:2]: “In my Father’s house there are many mansions.”</p>\n",
+        "short_description": null,
+        "artist_title": "Kerry James Marshall",
+        "style_title": "contemporary",
+        "image_id": "d94d0e3d-5d89-ce07-ee0f-7fa6d8def8ab"
+    },
+    "info": {
+        "license_text": "The `description` field in this response is licensed under a Creative Commons Attribution 4.0 Generic License (CC-By) and the Terms and Conditions of artic.edu. All other data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu.",
+        "license_links": [
+            "https://creativecommons.org/publicdomain/zero/1.0/",
+            "https://www.artic.edu/terms"
+        ],
+        "version": "1.10"
+    },
+    "config": {
+        "iiif_url": "https://www.artic.edu/iiif/2",
+        "website_url": "http://www.artic.edu"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "data": {
+        "id": 14620,
+        "title": "Cliff Walk at Pourville",
+        "short_description": "In the 1880s, Monet went to paint in Normandy and became increasingly enamored of his surroundings. He wrote to his second wife and her children: \"How beautiful the countryside is becoming, and what joy it would be for me to show you all its delightful nooks and crannies!\" Eventually they joined him in Pourville. The two young women strolling here are probably the eldest daughters.",
+        "artist_title": "Claude Monet",
+        "image_id": "b0effb1c-ff23-bbaa-f809-9fd94e31c1a0"
+    },
+    "info": {
+        "license_text": "The `description` field in this response is licensed under a Creative Commons Attribution 4.0 Generic License (CC-By) and the Terms and Conditions of artic.edu. All other data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu.",
+        "license_links": [
+            "https://creativecommons.org/publicdomain/zero/1.0/",
+            "https://www.artic.edu/terms"
+        ],
+        "version": "1.10"
+    },
+    "config": {
+        "iiif_url": "https://www.artic.edu/iiif/2",
+        "website_url": "http://www.artic.edu"
+    }
+}

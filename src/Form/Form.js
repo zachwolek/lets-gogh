@@ -25,14 +25,14 @@ export const Form = ({setSearchValue}) => {
         <form>
             <label htmlFor="search">Search Exhibitions</label>
             <input
-                className='input' 
+                className='input-box' 
                 type="text" 
                 name="search" 
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
             />
             <button
-                className='searchButton'
+                className='search-button'
                 onClick={(e) => handleSubmit(e)}
             >Search</button>
         </form>

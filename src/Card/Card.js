@@ -18,7 +18,7 @@ export const Card = ({id, image_id, title, artist_title, alt_text, short_descrip
 
                 <Link to={`/artfeature/${id}`}>
                     <button 
-                        className='exhibition-info'
+                        className='exhibition-info-button'
                         onClick={() => {
                             updateArtFeature(id)
                         }}

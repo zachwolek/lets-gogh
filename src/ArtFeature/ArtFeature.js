@@ -8,17 +8,17 @@ export const ArtFeature = ({artFeature, savedExhibitionIds, toggleSaveExhibition
     console.log("DESCRIPTION: ", artFeature)
     return (
         <>
-            <p>artist_title: {artist_title}</p>
-            <p>date_display: {date_display}</p>
-            <p dangerouslySetInnerHTML={{ __html: description }} />
+            <p className='artist_title'>artist_title: {artist_title}</p>
+            <p className='date_display'>date_display: {date_display}</p>
+            <p className="description" dangerouslySetInnerHTML={{ __html: description }} />
             <p>id: {id}</p>
             <img src={`https://www.artic.edu/iiif/2/${image_id}/full/843,/0/default.jpg`}/>
-            <p>place_of_origin: {place_of_origin}</p>
+            <p className='place_of_origin'>place_of_origin: {place_of_origin}</p>
             <p dangerouslySetInnerHTML={{ __html: short_description }} />
-            <p>style_title: {style_title}</p>
-            <p>title: {title}</p>
+            <p className='style_title'>style_title: {style_title}</p>
+            <p className='title'>title: {title}</p>
             <Link to={`/`}>
-                <button>HOME</button>
+                <button className='home_button'>HOME</button>
             </Link>  
             <button 
                 className={`save-button ${savedExhibitionIds.includes(id) ? 'remove-state' : 'save-state'}`}
