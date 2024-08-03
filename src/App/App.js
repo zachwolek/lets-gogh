@@ -70,6 +70,7 @@ const App = () => {
             artFeature={artFeature}
             savedExhibitionIds={savedExhibitionIds}
             toggleSaveExhibition={toggleSaveExhibition}
+            setSearchValue={setSearchValue}
             />
           }/>
           <Route 
