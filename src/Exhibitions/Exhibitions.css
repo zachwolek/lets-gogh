@@ -1,7 +1,14 @@
 .exhibitions-container {
     display: flex;
     flex-wrap: wrap; 
+    flex-direction: column;
     gap: 20px; 
     justify-content: center; 
     padding: 20px;
+}
+
+.exhibition-cards{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
 }

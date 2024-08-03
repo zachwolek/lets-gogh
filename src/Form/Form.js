@@ -7,12 +7,6 @@ export const Form = ({setSearchValue}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        //handleError()
-        //Create Error component
-        //isError
-        //set is Error, default value fault
-        //if no error then display form
-        //if there is an error then display error component
         setSearchValue(inputValue)
         clearInput()
     }
@@ -23,11 +17,12 @@ export const Form = ({setSearchValue}) => {
 
     return (
         <form>
-            <label htmlFor="search">Search Exhibitions</label>
+            <label htmlFor="search"></label>
             <input
                 className='input-box' 
                 type="text" 
                 name="search" 
+                placeholder='Search Exhibitions'
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
             />

@@ -15,9 +15,6 @@ const App = () => {
   const [savedExhibitionIds, setSavedExhibitionIds] = useState([])
   const [savedExhibitions, setSavedExhibitions] = useState([])
   const [error, setError] = useState('')
-  //isError State
-  //IsLoading State
-
 
   useEffect(() => {
     searchExhibitions(searchValue)
@@ -55,6 +52,7 @@ const App = () => {
               <>
                 <Header 
                   setSearchValue={setSearchValue}
+                  searchValue={searchValue}
                 />
                 {error && <h2>{error}</h2>}
                 <Exhibitions 
@@ -62,6 +60,7 @@ const App = () => {
                   updateArtFeature={updateArtFeature} 
                   toggleSaveExhibition={toggleSaveExhibition}
                   savedExhibitionIds={savedExhibitionIds}
+                  searchValue={searchValue}
                 />
               </>
             }
@@ -80,6 +79,7 @@ const App = () => {
               updateArtFeature={updateArtFeature}
               toggleSaveExhibition={toggleSaveExhibition} 
               savedExhibitionIds={savedExhibitionIds} 
+              setSearchValue={setSearchValue}
             />}
           />
       </Routes> 

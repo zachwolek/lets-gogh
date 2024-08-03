@@ -2,7 +2,7 @@ import { Card } from '../Card/Card'
 import './Exhibitions.css'
 import PropTypes from 'prop-types';
 
-export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, toggleSaveExhibition}) => {
+export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, toggleSaveExhibition, searchValue}) => {
     const exhibitionCards = exhibitions.map(exhibition => {
         return (
             <Card 
@@ -23,12 +23,15 @@ export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, 
 
     return (
         <div className='exhibitions-container'>
+            {searchValue? <p>Showing top artifacts results containing: {searchValue}</p>: <></>}
+            <div className='exhibition-cards'>
             {exhibitionCards.length > 0 ? 
             (
                 exhibitionCards
             ) : 
             <p>Curating your results...</p>
             }
+            </div>
         </div>
     )
 }

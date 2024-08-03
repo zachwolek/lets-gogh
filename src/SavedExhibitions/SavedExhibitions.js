@@ -3,7 +3,7 @@ import { Card } from "../Card/Card"
 import PropTypes from 'prop-types';
 import './SavedExhibitions.css'
 
-export const SavedExhibitions = ({savedExhibitions, updateArtFeature, toggleSaveExhibition, savedExhibitionIds}) => {
+export const SavedExhibitions = ({savedExhibitions, updateArtFeature, toggleSaveExhibition, savedExhibitionIds, setSearchValue}) => {
 
     const savedExhibitionCards = savedExhibitions.map(exhibition => {
         return (
@@ -24,12 +24,12 @@ export const SavedExhibitions = ({savedExhibitions, updateArtFeature, toggleSave
     return (
         <>
         <h1>Your Curated Bucket List</h1>
-        <Link to={`/`}>
-                <button className="home-button">Back to Search</button>
+        <Link to={`/`}
+            className="home-button" onClick={() => setSearchValue('')}>Back to Home
         </Link>
         <div className='saved-exhibitions-container'>
             {savedExhibitionCards.length === 0 ?
-            <p>Nothing saved yet! <Link to={`/`}>Try Searching Exhibits!</Link>
+            <p>Nothing saved yet!
             </p>
             : savedExhibitionCards}
         </div>
