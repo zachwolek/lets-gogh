@@ -23,7 +23,12 @@ export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, 
 
     return (
         <div className='exhibitions-container'>
-            {exhibitionCards ? exhibitionCards : <p>Loading</p> }
+            {exhibitionCards.length > 0 ? 
+            (
+                exhibitionCards
+            ) : 
+            <p>Curating your results...</p>
+            }
         </div>
     )
 }

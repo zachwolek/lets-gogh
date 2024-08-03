@@ -14,6 +14,7 @@ const App = () => {
   const [artFeature, setArtFeature] = useState('')
   const [savedExhibitionIds, setSavedExhibitionIds] = useState([])
   const [savedExhibitions, setSavedExhibitions] = useState([])
+  const [error, setError] = useState('')
   //isError State
   //IsLoading State
 
@@ -21,6 +22,7 @@ const App = () => {
   useEffect(() => {
     searchExhibitions(searchValue)
     .then(data => setExhibitions(data))
+    .catch(error => setError(error.message))
   }, [searchValue])
 
   useEffect(() => {
@@ -33,7 +35,7 @@ const App = () => {
     .then(data => {
       setArtFeature(data.data)
     })
-    .catch(error => console.log(error))
+    .catch(error => setError(error.message))
   }
 
   const toggleSaveExhibition = (id) => {
@@ -43,7 +45,6 @@ const App = () => {
       setSavedExhibitionIds([...savedExhibitionIds, id]);
     }
   };
-
 
   return (
     <div className="App">
@@ -55,7 +56,7 @@ const App = () => {
                 <Header 
                   setSearchValue={setSearchValue}
                 />
-                {/* >>>>>>>Add conditional so if loading or if error here<<<<<<< */}
+                {error && <h2>{error}</h2>}
                 <Exhibitions 
                   exhibitions={exhibitions} 
                   updateArtFeature={updateArtFeature} 

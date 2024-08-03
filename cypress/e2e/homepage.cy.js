@@ -51,6 +51,7 @@ describe('Landing page API server error', () => {
       statusCode: 500
     }).as('getServerFailure')
     .visit('http://localhost:3000')
+    .log('.error')
   })
 })
 
