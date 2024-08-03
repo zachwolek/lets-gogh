@@ -1,0 +1,84 @@
+{
+    "preference": null,
+    "pagination": {
+        "total": 301,
+        "limit": 10,
+        "offset": 0,
+        "total_pages": 31,
+        "current_page": 1
+    },
+    "data": [
+        {
+            "_score": 212.84174,
+            "thumbnail": {
+                "alt_text": "Painting of a pond seen up close spotted with thickly painted pink and white water lilies and a shadow across the top third of the picture.",
+                "width": 8808,
+                "lqip": "data:image/gif;base64,R0lGODlhBQAFAPQAAEZcaFFfdVtqbk9ldFBlcVFocllrcFlrd11rdl9sdFZtf15wcWV0d2R2eGByfmd6eGl6e2t9elZxiGF4kWB4kmJ9kGJ8lWeCkWSAnQAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAFAAUAAAUVoJBADXI4TLRMWHU9hmRRCjAURBACADs=",
+                "height": 8460
+            },
+            "api_model": "artworks",
+            "is_boosted": true,
+            "api_link": "https://api.artic.edu/api/v1/artworks/16568",
+            "id": 16568,
+            "title": "Water Lilies",
+            "timestamp": "2024-08-01T03:06:30-05:00"
+        },
+        {
+            "_score": 197.19858,
+            "thumbnail": {
+                "alt_text": "Loosely painted image of an open-air train station. On the right, a parked train gives off an enormous plumb of white smoke, making the scene look as though it were full of clouds. A huddled mass of barely discernible people crowd around the train on both sides of the tracks. Blue, green, and gray tones dominate.",
+                "width": 6786,
+                "lqip": "data:image/gif;base64,R0lGODlhBwAFAPUAADU8QkROS0ZPU0hSVk1YXVFWUlBXXlFaWVNcWFFkV1plVVtjWmBnWmFqXmRrX05ZYFFaYlljbF5qbGNsY2ZydmlzdWRxeGdze2l1fWx3fG16enJ4fH+KioWOkZeam5yjqZ2lqrG1ubS6vwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAHAAUAAAYhQIKmYslQDoONp8ORBECi0OfyKEAMmAhAgFhMHA2GIhEEADs=",
+                "height": 5092
+            },
+            "api_model": "artworks",
+            "is_boosted": true,
+            "api_link": "https://api.artic.edu/api/v1/artworks/16571",
+            "id": 16571,
+            "title": "Arrival of the Normandy Train, Gare Saint-Lazare",
+            "timestamp": "2024-08-01T03:06:00-05:00"
+        },
+        {
+            "_score": 195.02467,
+            "thumbnail": {
+                "alt_text": "Painting composed of short, dense brushstrokes depicts two domed stacks of wheat that cast long shadows on a field. The angled light indicates either a rising or setting sun.",
+                "width": 6884,
+                "lqip": "data:image/gif;base64,R0lGODlhCAAFAPUAAF5eVW1bVm9eVmpjW3RoXXxyV39yXmdsZmhmaXZtbG11eH57eYl5bYR7dHuAf4mDfo6HfpePdpCFeZSOfJ+VdnZ+g4ODgoCHg4iHgo+GgY2MgpmThJeTipaSjaCcmbWnh6qrpKmopqqtrKusrbGxobq4pLu5qq2zsQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAIAAUAAAYlwJNoFAKRSiZPh7OZRCgfBWJwAAQEBU2D8VgkCAYI5uKoWDKSIAA7",
+                "height": 4068
+            },
+            "api_model": "artworks",
+            "is_boosted": true,
+            "api_link": "https://api.artic.edu/api/v1/artworks/64818",
+            "id": 64818,
+            "title": "Stacks of Wheat (End of Summer)",
+            "timestamp": "2024-08-01T03:06:24-05:00"
+        },
+        {
+            "_score": 191.32013,
+            "thumbnail": {
+                "alt_text": "Painting of a cliff overlooking the sea. Two figures in long dresses, one with a parasol, stand on the cliff beneath blue sky.",
+                "width": 6356,
+                "lqip": "data:image/gif;base64,R0lGODlhBgAFAPQAAHF2XH98dIF3aHyEf4ODZ4ePaIaBc4WIc4eKd4iIc5GKd5OMeJSMeJuRfn2GkIeVlomZl5eZkJicl46ZrZKbr5qeqoaTs4eUt42XsYGZtIuYsIqZsI6cs4eWugAAAAAAACH5BAAAAAAALAAAAAAGAAUAAAUYYHdZ2JZx2lRRDvQMxgFIUSAQRcMoS4KEADs=",
+                "height": 5090
+            },
+            "api_model": "artworks",
+            "is_boosted": false,
+            "api_link": "https://api.artic.edu/api/v1/artworks/14620",
+            "id": 14620,
+            "title": "Cliff Walk at Pourville",
+            "timestamp": "2024-08-01T03:05:58-05:00"
+        }
+    ],
+    "info": {
+        "license_text": "The `description` field in this response is licensed under a Creative Commons Attribution 4.0 Generic License (CC-By) and the Terms and Conditions of artic.edu. All other data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu.",
+        "license_links": [
+            "https://creativecommons.org/publicdomain/zero/1.0/",
+            "https://www.artic.edu/terms"
+        ],
+        "version": "1.10"
+    },
+    "config": {
+        "iiif_url": "https://www.artic.edu/iiif/2",
+        "website_url": "http://www.artic.edu"
+    }
+}

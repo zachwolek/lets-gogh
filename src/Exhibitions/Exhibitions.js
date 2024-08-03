@@ -1,7 +1,8 @@
 import { Card } from '../Card/Card'
 import './Exhibitions.css'
+import PropTypes from 'prop-types';
 
-export const Exhibitions = ({exhibitions, updateArtFeature, toggleSaveExhibition, savedExhibitionIds}) => {
+export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, toggleSaveExhibition, searchValue}) => {
     const exhibitionCards = exhibitions.map(exhibition => {
         return (
             <Card 
@@ -22,13 +23,22 @@ export const Exhibitions = ({exhibitions, updateArtFeature, toggleSaveExhibition
 
     return (
         <div className='exhibitions-container'>
-            {exhibitionCards ? exhibitionCards : <p>Loading</p> }
+            {searchValue? <p>Showing top artifacts results containing: {searchValue}</p>: <></>}
+            <div className='exhibition-cards'>
+            {exhibitionCards.length > 0 ? 
+            (
+                exhibitionCards
+            ) : 
+            <p>Curating your results...</p>
+            }
+            </div>
         </div>
     )
 }
-//loading goes here on 23.5
-//loading.current == true
-//after setExhibitions
-    //loading.current=== false
-//if loading <p>
-    //if false {exhibitioncards}
+
+Exhibitions.propTypes = {
+    exhibitions: PropTypes.array.isRequired,
+    savedExhibitionIds: PropTypes.array.isRequired,
+    updateArtFeature: PropTypes.func.isRequired,
+    toggleSaveExhibition: PropTypes.func.isRequired
+}

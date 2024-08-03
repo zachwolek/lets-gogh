@@ -14,11 +14,12 @@ const App = () => {
   const [artFeature, setArtFeature] = useState('')
   const [savedExhibitionIds, setSavedExhibitionIds] = useState([])
   const [savedExhibitions, setSavedExhibitions] = useState([])
-
+  const [error, setError] = useState('')
 
   useEffect(() => {
     searchExhibitions(searchValue)
     .then(data => setExhibitions(data))
+    .catch(error => setError(error.message))
   }, [searchValue])
 
   useEffect(() => {
@@ -30,9 +31,8 @@ const App = () => {
     getExhibitionInfo(id)
     .then(data => {
       setArtFeature(data.data)
-      console.log("DATAAAAAAAA: ", data.data)
     })
-    .catch(error => console.log(error))
+    .catch(error => setError(error.message))
   }
 
   const toggleSaveExhibition = (id) => {
@@ -43,7 +43,6 @@ const App = () => {
     }
   };
 
-
   return (
     <div className="App">
       <Routes>
@@ -53,12 +52,15 @@ const App = () => {
               <>
                 <Header 
                   setSearchValue={setSearchValue}
+                  searchValue={searchValue}
                 />
+                {error && <h2>{error}</h2>}
                 <Exhibitions 
                   exhibitions={exhibitions} 
                   updateArtFeature={updateArtFeature} 
                   toggleSaveExhibition={toggleSaveExhibition}
                   savedExhibitionIds={savedExhibitionIds}
+                  searchValue={searchValue}
                 />
               </>
             }
@@ -77,6 +79,7 @@ const App = () => {
               updateArtFeature={updateArtFeature}
               toggleSaveExhibition={toggleSaveExhibition} 
               savedExhibitionIds={savedExhibitionIds} 
+              setSearchValue={setSearchValue}
             />}
           />
       </Routes> 

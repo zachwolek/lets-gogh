@@ -1,0 +1,25 @@
+{
+    "data": {
+        "id": 16568,
+        "title": "Water Lilies",
+        "date_display": "1906",
+        "place_of_origin": "France",
+        "description": "<p>“One instant, one aspect of nature contains it all,” said Claude Monet, referring to his late masterpieces, the water landscapes that he produced at his home in Giverny between 1897 and his death in 1926. These works replaced the varied contemporary subjects he had painted from the 1870s through the 1890s with a single, timeless motif—water lilies. The focal point of these paintings was the artist’s beloved ﬂower garden, which featured a water garden and a smaller pond spanned by a Japanese footbridge. In his first <a href=\"https://www.youtube.com/watch?v=NFPs_cRRGdM&feature=youtu.be\">water-lily series</a> (1897–99), Monet painted the pond environment, with its plants, bridge, and trees neatly divided by a fixed horizon. Over time, the artist became less and less concerned with conventional pictorial space. By the time he painted <em>Water Lilies</em>, which comes from his third group of these works, he had dispensed with the horizon line altogether. In this spatially ambiguous canvas, the artist looked down, focusing solely on the surface of the pond, with its cluster of vegetation ﬂoating amid the reﬂection of sky and trees. Monet thus created the image of a horizontal surface on a vertical one.</p>\n",
+        "short_description": null,
+        "artist_title": "Claude Monet",
+        "style_title": "Impressionism",
+        "image_id": "3c27b499-af56-f0d5-93b5-a7f2f1ad5813"
+    },
+    "info": {
+        "license_text": "The `description` field in this response is licensed under a Creative Commons Attribution 4.0 Generic License (CC-By) and the Terms and Conditions of artic.edu. All other data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu.",
+        "license_links": [
+            "https://creativecommons.org/publicdomain/zero/1.0/",
+            "https://www.artic.edu/terms"
+        ],
+        "version": "1.10"
+    },
+    "config": {
+        "iiif_url": "https://www.artic.edu/iiif/2",
+        "website_url": "http://www.artic.edu"
+    }
+}
