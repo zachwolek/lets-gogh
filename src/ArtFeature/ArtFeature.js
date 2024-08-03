@@ -29,4 +29,3 @@ export const ArtFeature = ({artFeature, savedExhibitionIds, toggleSaveExhibition
         </>
     )
 }
-
