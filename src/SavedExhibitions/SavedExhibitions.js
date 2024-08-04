@@ -25,7 +25,7 @@ export const SavedExhibitions = ({savedExhibitions, updateArtFeature, toggleSave
         <>
         <h1>Your Curated Bucket List</h1>
         <Link to={`/`}
-            className="home-button" onClick={() => setSearchValue('')}>Back to Home
+            className="home-button" onClick={() => setSearchValue('')}><strong>Back to Home</strong>
         </Link>
         <div className='saved-exhibitions-container'>
             {savedExhibitionCards.length === 0 ?

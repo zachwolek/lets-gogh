@@ -14,6 +14,7 @@ export const Header = ({setSearchValue, searchValue}) => {
                 <Link to="/saved" className="saved-link">Saved Exhibitions</Link>
                 {searchValue? <Link to="/" className="home-link" onClick={() => setSearchValue('')}>Return Home</Link>: <></>}
             </div>
+            <hr className='header-divider' />
         </div>
      </header>
     )

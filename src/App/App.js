@@ -6,6 +6,7 @@ import { Header } from '../Header/Header'
 import { Exhibitions } from '../Exhibitions/Exhibitions';
 import { ArtFeature } from '../ArtFeature/ArtFeature'
 import { SavedExhibitions} from "../SavedExhibitions/SavedExhibitions"
+import { NotFound } from '../NotFound/NotFound'
 import { Routes, Route, Link } from 'react-router-dom';
 
 const App = () => {
@@ -70,6 +71,7 @@ const App = () => {
             artFeature={artFeature}
             savedExhibitionIds={savedExhibitionIds}
             toggleSaveExhibition={toggleSaveExhibition}
+            setSearchValue={setSearchValue}
             />
           }/>
           <Route 
@@ -82,6 +84,9 @@ const App = () => {
               setSearchValue={setSearchValue}
             />}
           />
+          <Route path='*' element={<NotFound 
+            setSearchValue={setSearchValue}
+          />}/>
       </Routes> 
     </div>
   );
