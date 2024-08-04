@@ -24,7 +24,6 @@ export const Card = ({id, image_id, title, artist_title, alt_text, short_descrip
                             }}
                         >SEE MORE</button>
                     </Link>    
-
                     <button 
                         className={`save-button ${savedExhibitionIds.includes(id) ? 'remove-state' : 'save-state'}`}
                         onClick={() => toggleSaveExhibition(id)}

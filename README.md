@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+### Abstract:
+[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+Let's Gogh! displays exhibitions from the Art Institute of Chicago (AIC) with the intention of allowing users to save artifacts they wish to see. Upon page load, users will see the first ten artifacts provided by the AIC and a short description (when available) when hovering over the image. Users then have the ability to search for exhibitions by title or phrase contained within the API, and store artifacts they wish to visit to a "Bucket List". If the user wishes to learn more about the displayed artifacts, a larger image renders with a full description, place of origin, date, and style. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Installation Instructions:
+[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+1) Access the form here: https://github.com/zachwolek/rt-peter-zach
+2) Copy the SSH repository URL git@github.com:zachwolek/lets-gogh.git
+3) Open terminal and 'cd' into the directory you wish to clone 
+4) Clone the repository by submitting `git clone git@github.com:zachwolek/lets-gogh.git`
 
-## Available Scripts
+For Testing:
+1) cd into the directory and run 'npm start' in the terminal
+2) In another tab in your terminal, run 'npm run cy:open" 
+3) Choose e2e testing
+4) Run on your browser of choice (Preferebly Chrome)
+5) Select 'homepage.cy.js', 'pageload.cy.js', 'saved.cy.js', or 'search.cy.js' in the browser
 
-In the project directory, you can run:
+### Preview of App:
+[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+![Preview description](https://imgur.com/a/NYWvLDx)
+When determining whether or not to save an item to the user's Saved Items "Bucket List", a short description of the exhibition displays when hovering over the image itself. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Context:
+[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+This project was assigned in two parts over Weeks 14 and 15 of Turing's School of Software and Design. This project was the the Final Showcase Project of Turing's "Module 3", with each module being six weeks in length. This Final Showcase Project was chosen as a passion project to continue to build forward after graduation 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Contributors:
+[//]: <> (Who worked on this application? Link to their GitHubs.)
+Zach Wolek: https://github.com/zachwolek/
 
-### `npm test`
+### Learning Goals:
+[//]: <> (What were the learning goals of this project? What tech did you work with?)
+The primary learning goal of this project was to build a single app using React and React Router to simulate a multi-page app.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Technologies across the project involved React, Browser Routing, JSX, Cypress, React Hooks, PropTypes, HTML, JS/ES6, and CSS. 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Wins + Challenges:
+[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+1) The Art Institute of Chicago provides an incredible free API I would reccomend to nearly anyone looking to get practice. With so much being available, easily the most difficult challenge was navigating the [API Docs](https://api.artic.edu/docs/) which allow you the freedom to retreiving anything desired. The greatest challenge was finding a way to navigate the API, which involved mapping a list of IDs for each search result, fetching each individual exhibition for image information, then mapping an array of promises to achieve image data for all searched items. 
+2) Another challenge was learning how to incorporate JSX for conditional rendering, which was a fun challenge. With thousands of exhibitions, several are missing certain pieces of information. Learning to conditionally render HTML components only if the API data contained information was a fun challenge to learn the capabilities of React and JSX
