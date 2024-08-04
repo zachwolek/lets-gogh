@@ -7,7 +7,7 @@ export const ArtFeature = ({artFeature, savedExhibitionIds, toggleSaveExhibition
 
     console.log("DESCRIPTION: ", artFeature.image_id)
     return (
-        <>
+        <main className='main'>
             <h1 className='title'>{title}</h1>
             {artist_title && <h2 className='artist_title'>{artist_title}</h2>}
             <img src={`https://www.artic.edu/iiif/2/${image_id}/full/843,/0/default.jpg`}/>
@@ -20,7 +20,7 @@ export const ArtFeature = ({artFeature, savedExhibitionIds, toggleSaveExhibition
             {date_display && <p className='date_display'>Date: {date_display}</p>}
             {style_title && <p className='style_title'>Style: {style_title}</p>}
             <Link to={`/`}>
-                <button className='home_button'>BACK</button>
+                <button className='home-button'>BACK</button>
             </Link>    
             <button 
                 className={`save-button ${savedExhibitionIds.includes(id) ? 'remove-state' : 'save-state'}`}
@@ -28,7 +28,7 @@ export const ArtFeature = ({artFeature, savedExhibitionIds, toggleSaveExhibition
                 >
                 {savedExhibitionIds.includes(id) ? 'REMOVE' : 'SAVE'}
             </button>
-        </>
+        </main>
     )
 }
 

@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center 
+    justify-content: center;
+    border-bottom: 2px solid #ccc;
 }
 
 .saved-link, .home-link {
@@ -18,3 +19,5 @@
     justify-content: center;
     margin: 10px
   }
+
+  

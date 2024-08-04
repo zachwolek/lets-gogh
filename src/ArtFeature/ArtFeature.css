@@ -1,0 +1,41 @@
+.main {
+    margin: 20px; 
+    padding: 20px; 
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.artist_title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #555; 
+    margin: 10px 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+
+.description {
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333; 
+}
+
+.place_of_origin, .date_display, .style_title {
+    font-style: italic;
+    color: #666; 
+}

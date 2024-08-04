@@ -23,7 +23,7 @@ export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, 
 
     return (
         <div className='exhibitions-container'>
-            {searchValue? <p>Showing top artifacts results containing: {searchValue}</p>: <></>}
+            {searchValue? <p><em>Showing top exhibitions containing:</em> <strong>{searchValue}</strong></p>: <></>}
             <div className='exhibition-cards'>
             {exhibitionCards.length > 0 ? 
             (

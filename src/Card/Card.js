@@ -14,23 +14,24 @@ export const Card = ({id, image_id, title, artist_title, alt_text, short_descrip
                     </p>
                 </div>
                 <h3 className='title'>{title}</h3>
-                <p>{artist_title}</p>
+                <p className='artist-title'><em>{artist_title}</em></p>
+                <div className='button-container'>
+                    <Link to={`/artfeature/${id}`}>
+                        <button 
+                            className='exhibition-info-button'
+                            onClick={() => {
+                                updateArtFeature(id)
+                            }}
+                        >SEE MORE</button>
+                    </Link>    
 
-                <Link to={`/artfeature/${id}`}>
                     <button 
-                        className='exhibition-info-button'
-                        onClick={() => {
-                            updateArtFeature(id)
-                        }}
-                    >SEE MORE</button>
-                </Link>    
-
-                <button 
-                    className={`save-button ${savedExhibitionIds.includes(id) ? 'remove-state' : 'save-state'}`}
-                    onClick={() => toggleSaveExhibition(id)}
-                >
-                    {savedExhibitionIds.includes(id) ? 'REMOVE' : 'SAVE'}
-                </button>
+                        className={`save-button ${savedExhibitionIds.includes(id) ? 'remove-state' : 'save-state'}`}
+                        onClick={() => toggleSaveExhibition(id)}
+                    >
+                        {savedExhibitionIds.includes(id) ? 'REMOVE' : 'SAVE'}
+                    </button>
+                </div>    
             </div>
         </div>
         )
