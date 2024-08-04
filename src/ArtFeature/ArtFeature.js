@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export const ArtFeature = ({artFeature, savedExhibitionIds, toggleSaveExhibition}) => {
     const {artist_title, date_display, description, id, image_id, place_of_origin, style_title, title} = artFeature
 
-    console.log("DESCRIPTION: ", artFeature)
+    console.log("DESCRIPTION: ", artFeature.image_id)
     return (
         <>
             <h1 className='title'>{title}</h1>
