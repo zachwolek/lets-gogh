@@ -4,7 +4,7 @@ Let's Gogh! displays exhibitions from the Art Institute of Chicago (AIC) with th
 
 ### Installation Instructions:
 [//]: <> (What steps does a person have to take to get your app cloned down and running?)
-1) Access the form here: https://github.com/zachwolek/rt-peter-zach
+1) Access the form here: https://github.com/zachwolek/lets-gogh
 2) Copy the SSH repository URL git@github.com:zachwolek/lets-gogh.git
 3) Open terminal and 'cd' into the directory you wish to clone 
 4) Clone the repository by submitting `git clone git@github.com:zachwolek/lets-gogh.git`
