@@ -60,7 +60,13 @@
     margin-top: 10px; 
 }
 
+.exhibition-info-button,
+.save-button {
+    background-color: #A0D6B4;
+    color: black;
+}
+
 .save-button.remove-state {
-    background-color: purple;
+    background-color: #468189;
     color: white;
 }

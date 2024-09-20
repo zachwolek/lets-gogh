@@ -8,7 +8,7 @@ export const Card = ({id, image_id, title, artist_title, alt_text, short_descrip
             <div className="exhibition-card-container" title={alt_text}>
             <div className='exhibition-card'>
                 <div className='image-container'>
-                    <img alt={alt_text} src={`https://www.artic.edu/iiif/2/${image_id}/full/300,/0/default.jpg`} />
+                    <img alt={alt_text} src={`https://www.artic.edu/iiif/2/${image_id}/full/843,/0/default.jpg`} />
                     <p className='hover-description'>
                         {short_description ? <p dangerouslySetInnerHTML={{ __html: short_description }} /> : 'No information provided'}
                     </p>
