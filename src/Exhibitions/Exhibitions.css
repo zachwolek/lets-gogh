@@ -11,7 +11,7 @@
 
 .exhibition-cards {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     flex-wrap: nowrap;
     gap: 40px;
     padding: 10px;
