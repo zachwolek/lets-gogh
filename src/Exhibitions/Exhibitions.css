@@ -1,24 +1,52 @@
 .exhibitions-container {
+    position: relative; 
     display: flex;
     flex-direction: column;
-    gap: 20px; 
-    justify-content: center; 
+    gap: 20px;
+    justify-content: center;
     padding: 20px;
-    height: 100vh; 
-    overflow-y: hidden; 
+    height: auto; 
+    overflow-y: hidden;
 }
 
 .exhibition-cards {
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 40px;
     padding: 10px;
     width: auto; 
     overflow-x: auto;
+    position: relative; 
 }
 
 .exhibition-card-container {
     flex: 0 0 auto; 
     width: 400px; 
+}
+
+.arrow {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
 }
