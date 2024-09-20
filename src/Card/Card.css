@@ -1,29 +1,53 @@
 .exhibition-card-container {
-    border: 1px solid rgba(0, 0, 0, 0.1); 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    width: 300px;
+    width: 400px; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin: 10px;
-    background-color: #fff; 
-    transition: box-shadow 0.3s ease;
+    background-color: #fff;
 }
 
 .exhibition-card {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    height: 100%; 
-    padding: 20px; 
-    box-sizing: border-box; 
-    text-align: center; 
+    justify-content: flex-start; 
+    padding: 10px;
+    height: auto;
 }
 
 .image-container {
-    position: relative; 
-    overflow: hidden; 
-    border-radius: 10px 10px 0 0;
+    width: 100%; 
+    height: auto;
+}
+
+img {
+    width: 100%; 
+    height: auto; 
+}
+
+.title,
+.artist-title {
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: auto; 
+    width: 100%; 
+}
+
+.exhibition-info-button,
+.save-button {
+    background-color: #A0D6B4;
+    color: black;
+}
+
+.save-button.remove-state {
+    background-color: #468189;
+    color: white;
 }
 
 .hover-description {
@@ -51,22 +75,4 @@
 .image-container:hover .hover-description {
     opacity: 1;
     transform: translateY(0);
-}
-
-.button-container {
-    display: flex; 
-    flex-direction: row;
-    gap: 10px; 
-    margin-top: 10px; 
-}
-
-.exhibition-info-button,
-.save-button {
-    background-color: #A0D6B4;
-    color: black;
-}
-
-.save-button.remove-state {
-    background-color: #468189;
-    color: white;
 }

@@ -4,17 +4,21 @@
     gap: 20px; 
     justify-content: center; 
     padding: 20px;
+    height: 100vh; 
+    overflow-y: hidden; 
 }
 
-.exhibition-cards{
+.exhibition-cards {
     display: flex;
-    flex-wrap: nowrap; 
-    overflow-x: scroll; 
-    gap: 20px; 
+    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: 20px;
     padding: 10px;
+    width: auto; 
+    overflow-x: auto;
 }
 
 .exhibition-card-container {
-    flex: 0 0 auto; /* Prevent shrinking, each card takes its space */
-    width: 300px; /* Fixed width for cards */
+    flex: 0 0 auto; 
+    width: 400px; 
 }
