@@ -62,6 +62,7 @@ const App = () => {
                   toggleSaveExhibition={toggleSaveExhibition}
                   savedExhibitionIds={savedExhibitionIds}
                   searchValue={searchValue}
+                  setSearchValue={setSearchValue}
                 />
               </>
             }

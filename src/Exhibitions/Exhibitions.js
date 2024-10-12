@@ -1,8 +1,9 @@
 import { Card } from '../Card/Card'
+import { Link } from 'react-router-dom'
 import './Exhibitions.css'
 import PropTypes from 'prop-types';
 
-export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, toggleSaveExhibition, searchValue}) => {
+export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, toggleSaveExhibition, setSearchValue, searchValue}) => {
     const exhibitionCards = exhibitions.map(exhibition => {
         return (
             <Card 
@@ -32,7 +33,12 @@ export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, 
 
     return (
         <div className='exhibitions-container'>
-            {searchValue? <p><em>Showing top exhibitions containing:</em> <strong>{searchValue}</strong></p>: <></>}
+            {searchValue? 
+                <div className='search-results'>
+                    <p><em>Showing top exhibitions containing:</em> <strong>{searchValue}</strong></p>
+                    <Link to="/" className="home-link" onClick={() => setSearchValue('')}>Return Home</Link>
+                </div>
+                : null}
 
             <button className="arrow left-arrow" onClick={scrollLeft}>‹</button>
 
