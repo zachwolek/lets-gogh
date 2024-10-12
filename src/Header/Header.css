@@ -40,6 +40,21 @@ h2 {
   margin: 10px 0 0 0;
 }
 
+.button-link {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-link:hover {
+  background-color: #d4d4d4;
+  color: #000;
+}
+
 .saved-link, .home-link {
   font-weight: bold;
   margin-top: 10px;

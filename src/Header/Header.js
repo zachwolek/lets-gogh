@@ -13,7 +13,7 @@ export const Header = ({setSearchValue, searchValue}) => {
         <div className="header-right">
                 <Form setSearchValue={setSearchValue}/>
                 <div className='link-wrapper'>
-                    <Link to="/saved" className="saved-link">Saved Exhibitions</Link>
+                    <Link to="/saved" className="button-link">Saved Exhibitions</Link>
                     {searchValue? <Link to="/" className="home-link" onClick={() => setSearchValue('')}>Return Home</Link>: null}
                 </div>      
         </div>
