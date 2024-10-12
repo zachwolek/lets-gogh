@@ -36,7 +36,7 @@ export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, 
             {searchValue? 
                 <div className='search-results'>
                     <p><em>Showing top exhibitions containing:</em> <strong>{searchValue}</strong></p>
-                    <Link to="/" className="home-link" onClick={() => setSearchValue('')}>Return Home</Link>
+                    <Link to="/" className="home-button" onClick={() => setSearchValue('')}>Return Home</Link>
                 </div>
                 : null}
 

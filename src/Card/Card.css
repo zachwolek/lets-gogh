@@ -67,7 +67,7 @@ img {
     opacity: 0;
     transition: opacity 0.3s ease;
     text-align: center;
-    white-space: normal; /* Allow text to wrap */
+    white-space: normal; 
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -77,7 +77,7 @@ img {
 
 .hover-description p {
     margin: 0;
-    white-space: normal; /* Allows paragraph text to wrap */
+    white-space: normal; 
     overflow: hidden;
     text-overflow: ellipsis;
 }
