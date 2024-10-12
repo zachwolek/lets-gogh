@@ -22,12 +22,12 @@ export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, 
 
     function scrollLeft() {
         const container = document.querySelector('.exhibition-cards');
-        container.scrollBy({ left: -600, behavior: 'smooth' });
+        container.scrollBy({ left: -1000, behavior: 'smooth' });
     }
     
     function scrollRight() {
         const container = document.querySelector('.exhibition-cards');
-        container.scrollBy({ left: 600, behavior: 'smooth' });
+        container.scrollBy({ left: 1000, behavior: 'smooth' });
     }
 
     return (
