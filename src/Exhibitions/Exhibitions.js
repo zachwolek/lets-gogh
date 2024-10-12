@@ -20,10 +20,22 @@ export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, 
          )
     })
 
+    function scrollLeft() {
+        const container = document.querySelector('.exhibition-cards');
+        container.scrollBy({ left: -600, behavior: 'smooth' });
+    }
+    
+    function scrollRight() {
+        const container = document.querySelector('.exhibition-cards');
+        container.scrollBy({ left: 600, behavior: 'smooth' });
+    }
 
     return (
         <div className='exhibitions-container'>
             {searchValue? <p><em>Showing top exhibitions containing:</em> <strong>{searchValue}</strong></p>: <></>}
+
+            <button className="arrow left-arrow" onClick={scrollLeft}>‹</button>
+
             <div className='exhibition-cards'>
             {exhibitionCards.length > 0 ? 
             (
@@ -32,6 +44,9 @@ export const Exhibitions = ({exhibitions, savedExhibitionIds, updateArtFeature, 
             <p>Curating your results...</p>
             }
             </div>
+
+            <button className="arrow right-arrow" onClick={scrollRight}>›</button>
+
         </div>
     )
 }
