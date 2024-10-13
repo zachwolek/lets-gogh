@@ -46,6 +46,7 @@ const App = () => {
 
   return (
     <div className="App">
+
       <Routes>
           <Route 
             path='/' 
@@ -62,6 +63,7 @@ const App = () => {
                   toggleSaveExhibition={toggleSaveExhibition}
                   savedExhibitionIds={savedExhibitionIds}
                   searchValue={searchValue}
+                  setSearchValue={setSearchValue}
                 />
               </>
             }
