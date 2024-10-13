@@ -45,8 +45,66 @@ img {
 
 .exhibition-info-button,
 .save-button {
+    width: 120px;
     background-color: #A0D6B4;
     color: black;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.9em;
+    text-decoration: none; 
+}
+
+.save-button{
+    padding: 8px 36px 8px 16px;
+}
+
+.exhibition-info-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; 
+    text-decoration: none; 
+}
+
+.exhibition-info-button::before {
+    content: "\f06e"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400; 
+    margin-right: 8px;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    text-decoration: none; 
+}
+
+.exhibition-info-button:hover::before {
+    opacity: 1; 
+}
+
+.save-button::before {
+    content: "\f0c7"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400; 
+    margin-right: 8px;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    text-decoration: none; 
+}
+
+.save-button:hover::before {
+    opacity: 1; 
+}
+
+.view-icon {
+    opacity: 0; 
+    transition: opacity 0.3s;
+}
+
+.exhibition-info-button:hover .view-icon {
+    opacity: 1; 
 }
 
 .save-button.remove-state {

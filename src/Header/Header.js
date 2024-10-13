@@ -11,10 +11,10 @@ export const Header = ({setSearchValue, searchValue}) => {
             <h2>To the Art Institute of Chicago</h2>
         </div>
         <div className="header-right">
-                <Form setSearchValue={setSearchValue}/>
                 <div className='link-wrapper'>
                     <Link to="/saved" className="button-link">Saved Exhibitions</Link>
-                </div>      
+                </div>     
+                <Form setSearchValue={setSearchValue}/> 
         </div>
         <hr className='header-divider' />
      </header>
