@@ -16,21 +16,32 @@ header {
 
 h1 {
   font-size: 2.5em; 
-  font-weight: bold; 
+  font-weight: bold;
+  margin-bottom: 0; 
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; 
+  width: 100%;
+  flex-wrap: wrap; 
+}
+
+.header-left {
+  flex: 1; 
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
 }
 
 h2 {
   font-size: 1.5em;
   margin: 0;
   padding-top: 10px; 
-}
-
-.header-right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 15px;
-  margin-top: auto;
 }
 
 .header-divider {
@@ -41,13 +52,13 @@ h2 {
 }
 
 .button-link {
-  display: inline-block;
   padding: 8px 16px;
   border-radius: 5px;
   color: #333;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
+  align-self: flex-end;
 }
 
 .button-link:hover {
