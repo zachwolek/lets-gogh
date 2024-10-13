@@ -5,19 +5,19 @@ import './Header.css'
 
 export const Header = ({setSearchValue, searchValue}) => {
     return (
-    <header>
-        <div className="header-left">
-            <h1>Let's Gogh!</h1>
-            <h2>To the Art Institute of Chicago</h2>
-        </div>
+<header>
+    <h1>Let's Gogh!</h1>
+    <div className="bottom-header">
+        <h2 className="header-left">To the Chicago Art Institute</h2>
         <div className="header-right">
-                <div className='link-wrapper'>
-                    <Link to="/saved" className="button-link">Saved Exhibitions</Link>
-                </div>     
-                <Form setSearchValue={setSearchValue}/> 
+            <div className="link-wrapper">
+                <Link to="/saved" className="button-link">Saved Exhibitions</Link>
+            </div>
+            <Form setSearchValue={setSearchValue} />
         </div>
-        <hr className='header-divider' />
-     </header>
+    </div>
+    <hr className="header-divider" />
+</header>
     )
 }
 
