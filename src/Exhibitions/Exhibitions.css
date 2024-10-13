@@ -27,7 +27,7 @@
 
 .home-button{
     background-color: transparent; 
-    color: #468189; ; 
+    color: #468189;
     padding: 8px 16px;
     border-radius: 5px;
     text-decoration: none;
@@ -35,11 +35,17 @@
     font-size: 1em;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
+    align-items: center; 
+    gap: 8px;
 }
 
 .home-button:hover {
     background-color: #A0D6B4;
     color: white; 
+}
+
+.home-button i {
+    font-size: 1.2em; /* Adjust the icon size relative to text */
 }
 
 .arrow {
