@@ -17,9 +17,8 @@ For Testing:
 5) Select 'homepage.cy.js', 'pageload.cy.js', 'saved.cy.js', or 'search.cy.js' in the browser
 
 ### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
-![Preview description](https://imgur.com/a/NYWvLDx)
-When determining whether or not to save an item to the user's Saved Items "Bucket List", a short description of the exhibition displays when hovering over the image itself. 
+![Main Page Search](https://raw.githubusercontent.com/zachwolek/lets-gogh/main/public/images/MainPageSearch.png)
+![Single Page](https://raw.githubusercontent.com/zachwolek/lets-gogh/main/public/images/SinglePage.png)
 
 
 ### Context:
